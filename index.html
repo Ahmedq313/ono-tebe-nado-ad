@@ -1,10 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+  
+  <!-- ربط ملفات التنسيق والخطوط -->
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body class="page">
+
+  <!-- 1. HEADER SECTION (الهيدر) -->
+  <header class="header">
+    <nav class="header__menu">
+      <ul class="header__links-list">
+        <li class="header__links-list-item header__links-list-item_no-bull">
+          <a href="#0" class="header__link header__link_active">главная</a>
+        </li>
+        <li class="header__links-list-item">
+          <a href="#lots" class="header__link">посмотреть лоты</a>
+        </li>
+        <li class="header__links-list-item">
+          <a href="#about" class="header__link">об аукционе</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#0" class="header__logo">
+      <img src="./images/logo-black.svg" alt="логотип Оно тебе надо" class="header__logo-image" />
+    </a>
+    <address class="address header__address">
+      <a href="tel:+99999999999">+999 99 99 99 99</a><br />
+      <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <p>наш адрес: наб. Университетская, д. 12</p>
+    </address>
+  </header>
+
+  <main>
+    <!-- 2. COVER SECTION (قسم الغلاف الرئيسي) -->
+    <section class="cover">
+      <div class="overlay"></div>
+      <h1 class="cover__title">
+        <span class="aligned-text">оно</span>
+        <span class="aligned-text aligned-text_center">тебе</span>
+        <span class="aligned-text aligned-text_right">надо</span>
+      </h1>
+      <div class="cover__description">
+        <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+        <button class="bet-button" type="button">Сделать ставку</button>
+      </div>
+    </section>
+
+    <!-- 3. LOTS SECTION (قسم المعروضات / اللوتات) -->
+    <section class="lots" id="lots">
+      <h2 class="lots__heading">Лоты</h2>
+      <ul class="lots__card-list">
+        
+        <!-- بطاقة 1 -->
+        <li class="lots__card-list-item">
+          <a href="#0" class="card-link">
+            <article class="card card_type_film">
+              <div class="overlay"></div>
+              <h3 class="card__title">Фильм «Проклятие Блэр: Курсовая с того света»</h3>
+              <p class="card__text">
+                Невероятно редкий артефакт — оригинальная кассета VHS с фильмом.
+              </p>
+            </article>
+          </a>
+        </li>
+
+        <!-- بطاقة 2 -->
+        <li class="lots__card-list-item">
+          <a href="#0" class="card-link">
+            <article class="card card_type_book">
+              <div class="overlay"></div>
+              <h3 class="card__title">Книга «Криптономикон» Нила Стивенсона</h3>
+              <p class="card__text">
+                Одно из первых изданий культового романа в отличном состоянии.
+              </p>
+            </article>
+          </a>
+        </li>
+
+        <!-- بطاقة 3 -->
+        <li class="lots__card-list-item">
+          <a href="#0" class="card-link">
+            <article class="card card_type_picture">
+              <div class="overlay"></div>
+              <h3 class="card__title">Картина «Крик» Эдварда Мунка</h3>
+              <p class="card__text">
+                Уникальный эскиз легендарного полотна, найденный на чердаке.
+              </p>
+            </article>
+          </a>
+        </li>
+
+      </ul>
+      <a href="#0" class="lots__look-more-link">посмотреть больше</a>
+    </section>
+
+    <!-- 4. ABOUT SECTION (قسم عن المزاد) -->
+    <section class="about" id="about">
+      <div class="about__column about__column_type_logo">
+        <div class="about__logo">
+          <img src="./images/logo-white.svg" alt="Белый логотип Оно тебе надо" class="about__logo-image" />
+        </div>
+      </div>
+      <div class="about__column">
+        <h2 class="about__title">Об аукционе</h2>
+        <div class="about__text">
+          <p>
+            Здесь вы найдете вещи, которые никому не были нужны, но неожиданно стали ценными. 
+            Каждый лот — это история, за которой стоит чья-то вера в успех или просто случайность.
+          </p>
+          <p>
+            Мы собираем редкие предметы, от раритетных книг и виниловых пластинок до странных объектов искусства, 
+            чтобы дать им второй шанс.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 5. FOOTER SECTION (الفتر) -->
+  <footer class="footer">
+    <address class="address footer__address">
+      <a href="tel:+99999999999">+999 99 99 99 99</a><br />
+      <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <p>наш адрес: наб. Университетская, д. 12</p>
+    </address>
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item">
+          <a href="#0" class="footer__menu-link footer__menu-link_active">главная</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="#lots" class="footer__menu-link">посмотреть лоты</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="#about" class="footer__menu-link">об аукционе</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item">
+        <a href="#0" class="footer__social-link" target="_blank">
+          <img src="./images/yt.svg" alt="YouTube" class="footer__social-icon" />
+        </a>
+      </li>
+      <li class="footer__social-list-item">
+        <a href="#0" class="footer__social-link" target="_blank">
+          <img src="./images/vk.svg" alt="VK" class="footer__social-icon" />
+        </a>
+      </li>
+      <li class="footer__social-list-item">
+        <a href="#0" class="footer__social-link" target="_blank">
+          <img src="./images/pinterest.svg" alt="Pinterest" class="footer__social-icon" />
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
 </html>
